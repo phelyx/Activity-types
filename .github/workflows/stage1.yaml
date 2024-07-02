@@ -1,6 +1,6 @@
 name: Deployment Exercise 1
-on: 
-  pull_request
+on:
+  pull_request:
     types: 
       - opened
   workflow_dispatch:         
@@ -22,3 +22,4 @@ jobs:
         run: npm run build
       - name: Deploy code
         run: echo "Deploying..."
+        
